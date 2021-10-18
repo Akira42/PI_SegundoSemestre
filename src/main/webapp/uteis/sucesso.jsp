@@ -8,12 +8,18 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    <c:import url="../uteis/header.jsp"/>
+
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Sucesso</title>
     </head>
-    <body>
-        <h1>Operação realizada com sucesso!</h1>
+
+    <body class="container">
+        <div class="bg">
+            <div>
+                <h1>Operação realizada com sucesso!</h1>
+                <a href="${pageContext.request.contextPath}/index.jsp"><button class="btn btn-primary back">Voltar</button></a>
+            </div>
+        </div>
     </body>
-    <a href="<c:url value="/index.jsp"/>">Voltar</a>
 </html>
